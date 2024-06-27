@@ -6,7 +6,7 @@ DOI: 10.1257/aer.20220717
 
 [Replication Package](https://www.openicpsr.org/openicpsr/project/194886/version/V1/view)
 
-## Directory Structure 
+## Repository Structure 
 <pre>
 ├── code
 │   ├── analysis
