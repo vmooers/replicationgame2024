@@ -22,7 +22,7 @@ set sortseed 99999
 version 18
 
 * 1. Set up your user specific root directory to Replication Materials folder
-global analysis "/Users/victoriamooers/Downloads/194886-V1/replication"
+global analysis "/Users/victoriamooers/Library/CloudStorage/GoogleDrive-vrm2120@columbia.edu/My Drive/replicationgame2024/194886-V1/replication"
 
 *2. controls whether some more time consuming parts of the code are run. Set all to 1 to run everything 
 global graph=1 // set to 1 to generate graphs 
@@ -74,7 +74,7 @@ ssc install icw_index
 
 local github "https://raw.githubusercontent.com"
 cap noi net uninstall multe
-net install multe, from("/stata-multe-27fe818b881d4bae5b844e1e73f9eda4f4288d71")
+net install multe, from("$analysis/stata-multe-27fe818b881d4bae5b844e1e73f9eda4f4288d71") // you must go to the package's GitHub page, navigate to this commit, download it to your own computer, and call it from there -- because the old version is not available to download from github 
 
 *1) ensure R is installed on your device - download from https://cran.r-project.org/ 
 *2) download github to your device from https://desktop.github.com/
