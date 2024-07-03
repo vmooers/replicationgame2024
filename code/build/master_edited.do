@@ -11,7 +11,9 @@
 * Modified on June 28, 2024 to get the code to run through in one go
 * Two main changes required:
 * (1) Setting up an environment, in order to install the Stata packages without conflicts.
-* (2) Installing an older version of the GitHub package, because the "treatment" variable is used differently in the older version vs. the current version.
+/* (2) The "multe" package has been updated, and no longer runs for this code due to a change in how it identifies the treatment. Accordingly, you need to run the code using the old version of the package.
+	a. Go to the GitHub page for multe, navigate to the commit 27fe818b881d4bae5b844e1e73f9eda4f4288d71 (it should be from about three months ago), and download the full package to your computer.
+	b. Point the corresponding "net install…" command to where you have stored this version of the package locally.
 ***************************
 
 clear all
